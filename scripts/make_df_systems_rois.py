@@ -209,7 +209,7 @@ def melt(df_cleaned):
     return df_cleaned_melted
 
 def main(weighted, analysis, control_personality):
-    connectomes_df = LoadPickle(f'{data_path}/subjects_connectomes_og.pkl')
+    connectomes_df = LoadPickle(f'{data_path}/subjects_connectomes.pkl')
     kd_df = pd.read_csv(f'{data_path}/kinship_and_demographics_df.csv')
     personality_df = pd.read_csv(f'{data_path}/personality_df.csv')
     geographic_distance_df = pd.read_csv(f'{data_path}/geographic_distance_df.csv')
